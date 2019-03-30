@@ -1,15 +1,15 @@
-CREATE DATABASE array_db;
+CREATE DATABASE arr_db;
 
-USE array_db;
+USE arr_db;
 
-CREATE TABLE array (numbers int(11));
+CREATE TABLE array (numbers int(13));
 
-INSERT INTO array (numbers) VALUES (1),(2),(3),(4);
+INSERT INTO array (numbers) VALUES (4),(8),(13),(3),(2),(5),(7);
 
 SELECT * FROM array;
 
-SELECT * FROM array WHERE numbers=1;
+SELECT * FROM array WHERE numbers=2;
 
 DROP TABLE array;
 
-DROP DATABASE array_db;
+DROP DATABASE arr_db;

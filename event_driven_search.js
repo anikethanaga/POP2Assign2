@@ -1,19 +1,19 @@
-let binarySearch = function (arr, x) { 
+let binarySearch = function (arr, ele) { 
        
-    let start=0, end=arr.length-1; 
+    let init=0, end=arr.length-1; 
           
     // Iterate while start not meets end 
-    while (start<=end){ 
+    while (init<=end){ 
   
         // Find the mid index 
-        let mid=Math.floor((start + end)/2); 
+        let mid=Math.floor((init + end)/2); 
    
         // If element is present at mid, return True 
-        if (arr[mid]===x) return mid; 
+        if (arr[mid]===ele) return mid; 
   
         // Else look in left or right half accordingly 
-        else if (arr[mid] < x)  
-             start = mid + 1; 
+        else if (arr[mid] < ele)  
+             init = mid + 1; 
         else
              end = mid - 1; 
     } 
@@ -21,11 +21,10 @@ let binarySearch = function (arr, x) {
     return false;
 } 
    
-// Driver code 
-let arr = [1, 3, 5, 7, 8, 9]; 
-let x = 5; 
+let array = [7,8,9,10,11,12,13]; 
+let x = 10; 
 
-var bs = binarySearch(arr, x);
+var bs = binarySearch(array, x);
 if (bs) 
-    console.log("Element found! at position "+ bs); 
+    console.log("Element to be searched found at "+ bs); 
 else console.log("Element not found!"); 

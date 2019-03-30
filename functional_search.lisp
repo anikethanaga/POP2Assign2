@@ -3,4 +3,4 @@
         when (eql item element)
           do (return pos)))
  
-(write (linear-search '(2 3 5 7 11 13 17 19) 19))
+(write (linear-search '(1 3 6 67 56 22 33 39) 6))
