@@ -8,7 +8,7 @@
 		
 		(setq counter (+ counter 1))
 		(when (> counter num)(return counter))
-		)
+	)
 	(print "Enter the search element")
 	(defvar element (read))
 	(defvar flag 0)
@@ -19,13 +19,11 @@
 			 (setq flag 1)
 			 (return)
 			)
-			)
 		)
+	)
 	(if (eq flag 0)
 		(print "Not found")
 	)
-	
-
 	)
 
 (print "Enter number of elements in list:")
